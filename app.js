@@ -54,4 +54,8 @@ app.get('/akiMedium', function(request, response) {
      });
     });
 
-app.listen(2700);
+    var port = process.env.PORT;
+    if (port == null || port == "") {
+      port = 2900;
+    }
+    app.listen(port);
