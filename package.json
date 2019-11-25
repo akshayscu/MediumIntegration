@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "https": "1.0.0",
     "request": "^2.88.0",
@@ -13,10 +14,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["heroku"],
+  "keywords": [
+    "heroku"
+  ],
   "author": "Akshay G",
   "license": "ISC",
-  "engines":{
+  "engines": {
     "node": "10.15.1"
   }
 }

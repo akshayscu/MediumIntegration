@@ -1,9 +1,8 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 
-// if (process.env.NODE_ENV === 'production') {
-// 	app.use(express.static('client/build'));
-// }
+app.use(cors());
 
 app.get('/akiMedium', function(request, response) {
     var request = require('request');
