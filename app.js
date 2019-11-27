@@ -42,7 +42,7 @@ app.get('/akiMedium', function(request, response) {
 
      for(var item in g['item']){
         var yourString = g['item'][item]['content:encoded'].toString();
-        var maxLength = 200;
+        var maxLength = 150;
         var trimmedString = yourString.substr(0, maxLength);
         var regEx = /\b(https?:\/\/.*?\.[a-z]{2,4}\/[^\s]*\b)/g;
         var data = {
