@@ -28,7 +28,7 @@ app.get('/akiMedium', function(request, response) {
         });
       });
     }
-    var url = "https://medium.com/feed/@TheBBP_eds"
+    var url = "https://medium.com/feed/@aki9154"
     xmlToJson(url, function(err, data) {
       if (err) {
         return console.err(err);
