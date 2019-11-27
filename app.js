@@ -102,7 +102,7 @@ app.get('/bbpMedium', function(request, response) {
             img: ['https://upload.wikimedia.org/wikipedia/commons/4/42/Blog_%281%29.jpg'],
             title: g['item'][item]['title'],
             link: g['item'][item]['link'],
-            description : g['item'][item]['content:encoded']
+            desc : g['item'][item]['content:encoded']
           };
           resultArray.push(data);
         }
