@@ -53,7 +53,7 @@ app.get('/bbpMedium', function(request, response) {
         //   var image = null;
         // }
         var data = {
-          Img: authImg,
+          img: authImg,
           title: g['item'][item]['title'],
           link: g['item'][item]['link'],
           desc: g['item'][item]['content:encoded']
@@ -99,6 +99,7 @@ app.get('/bbpMedium', function(request, response) {
        var resultArray = [];
        for(var item in g['item']){
           var data = {
+            img: ['https://upload.wikimedia.org/wikipedia/commons/4/42/Blog_%281%29.jpg'],
             title: g['item'][item]['title'],
             link: g['item'][item]['link'],
             description : g['item'][item]['content:encoded']
