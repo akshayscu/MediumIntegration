@@ -49,6 +49,9 @@ app.get('/akiMedium', function(request, response) {
         if(authImg != null){
           var image = authImg;
         }
+        else{
+          var image = null;
+        }
         var data = {
           Img: image,
           title: g['item'][item]['title'],
