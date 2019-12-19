@@ -93,16 +93,10 @@ app.get('/bbpMedium', function(request, response) {
        var resultArray = [];
        for(var item in g['item']){
           var data = {
-<<<<<<< HEAD
             img: ['https://upload.wikimedia.org/wikipedia/commons/4/42/Blog_%281%29.jpg'],
             title: g['item'][item]['title'],
             // link: g['item'][item]['link'],
             desc : g['item'][item]['content:encoded']
-=======
-            title: g['item'][item]['title'],
-            link: g['item'][item]['link'],
-            description : g['item'][item]['content:encoded']
->>>>>>> b1fbe377998cb171c702f24181780ad7681c51ea
           };
           resultArray.push(data);
         }
@@ -110,7 +104,6 @@ app.get('/bbpMedium', function(request, response) {
        });
       });
 
-<<<<<<< HEAD
       app.get('/susMedium', function(request, response) {
         var request = require('request');
           var https = require('https');
@@ -158,8 +151,6 @@ app.get('/bbpMedium', function(request, response) {
         });
   
 
-=======
->>>>>>> b1fbe377998cb171c702f24181780ad7681c51ea
 
     var port = process.env.PORT;
     if (port == null || port == "") {
