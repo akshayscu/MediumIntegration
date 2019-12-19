@@ -46,16 +46,10 @@ app.get('/bbpMedium', function(request, response) {
         var trimmedString = yourString.substr(0, maxLength);
         var regEx = /\b(https?:\/\/.*?\.[a-z]{2,4}\/[^\s]*\b)/g;
         var authImg= [trimmedString.match(regEx)[0]];
-        // if(authImg != null){
-        //   var image = authImg;
-        // }
-        // else{
-        //   var image = null;
-        // }
         var data = {
           img: authImg,
           title: g['item'][item]['title'],
-          link: g['item'][item]['link'],
+          // link: g['item'][item]['link'],
           desc: g['item'][item]['content:encoded']
         };
         resultArray.push(data);
@@ -101,7 +95,7 @@ app.get('/bbpMedium', function(request, response) {
           var data = {
             img: ['https://upload.wikimedia.org/wikipedia/commons/4/42/Blog_%281%29.jpg'],
             title: g['item'][item]['title'],
-            link: g['item'][item]['link'],
+            // link: g['item'][item]['link'],
             desc : g['item'][item]['content:encoded']
           };
           resultArray.push(data);
@@ -147,7 +141,7 @@ app.get('/bbpMedium', function(request, response) {
             var data = {
               img: ['https://upload.wikimedia.org/wikipedia/commons/4/42/Blog_%281%29.jpg'],
               title: g['item'][item]['title'],
-              link: g['item'][item]['link'],
+              // link: g['item'][item]['link'],
               desc : g['item'][item]['content:encoded']
             };
             resultArray.push(data);
