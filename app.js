@@ -139,7 +139,7 @@ app.get('/bbpMedium', function(request, response) {
          var resultArray = [];
          for(var item in g['item']){
             var data = {
-              img: ['https://upload.wikimedia.org/wikipedia/commons/4/42/Blog_%281%29.jpg'],
+              img: ['https://media.licdn.com/dms/image/C5603AQEXNU0e3E3Tbg/profile-displayphoto-shrink_800_800/0?e=1582761600&v=beta&t=CT-AsbdMcp5nXL_gfzVnSQ9nlfV2YTvOmE_8-J5CV3A'],
               title: g['item'][item]['title'],
               // link: g['item'][item]['link'],
               desc : g['item'][item]['content:encoded']
